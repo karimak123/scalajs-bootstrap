@@ -2,11 +2,11 @@ import sbt.Keys._
 
 // Settings
 lazy val commonSettings = Seq(
-  organization := "com.github.karasiq",
+  organization := "com.txodds.karasiq",
   version := "1.1.2",
   isSnapshot := version.value.endsWith("SNAPSHOT"),
   scalaVersion := "2.11.8",
-  crossScalaVersions := Seq("2.11.8", "2.12.0"),
+  crossScalaVersions := Seq("2.11.8", "2.12.1"),
   publishMavenStyle := true,
   publishTo := {
     val nexus = "https://oss.sonatype.org/"
